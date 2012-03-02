@@ -38,6 +38,7 @@ def puissanceRapide(x, e) :
     result = x
     listExposants = [1]
     last = 1
+    
     for l in word:
         if l == "S":
             result = result * result
