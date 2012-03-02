@@ -1,10 +1,11 @@
 #!/usr/bin/python
 #-*-coding:utf8-*-
 
+
+"""
+    Retourne une chaine de caractère contenant i en binaire
+"""
 def decToBin(i):
-    """
-        Retourne une chaine de caractère contenant i en binaire
-    """
     result = ""
 
     while i != 0:
@@ -13,10 +14,10 @@ def decToBin(i):
     return result
 
 
+"""
+    Retourne le mot (composé de S et X) correspondant à l'exposant e
+"""
 def genereMot(e):
-    """
-        Retourne le mot (composé de S et X) correspondant à l'exposant e
-    """
     bin = decToBin(e)
     result = bin[1:]
     word = ""
@@ -30,10 +31,10 @@ def genereMot(e):
     return word
 
 
+"""
+    Retourne un couple (x^e, liste des exposants calculés)
+"""
 def puissanceRapide(x, e) :
-    """
-        Retourne un couple (x^e, liste des exposants calculés)
-    """
     word = genereMot(e)
     result = x
     listExposants = [1]
@@ -49,12 +50,12 @@ def puissanceRapide(x, e) :
         listExposants.append(last)
 
     return (result, listExposants)
-    
+   
 
+"""
+    Retourne le résultat de x^e 
+"""
 def puissanceLente(x, e) :
-    """
-        Retourne le résultat de x^e 
-    """
     result = 1
 
     for j in range(1, e + 1):

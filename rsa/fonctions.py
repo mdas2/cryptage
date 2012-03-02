@@ -6,20 +6,20 @@ from math import *
 from exponentiationRapide import *
 
 
+"""
+    Retourne le PGCD de a et b
+"""
 def pgcd(a, b):
-    """
-        Retourne le PGCD de a et b
-    """
     if a % b == 0:
         return b
 
     return pgcd(b, a % b)
 
 
+"""
+    Retourne le nombre de facteurs de n   
+"""
 def nombreFacteur(n):
-    """
-        Retourne le nombre de facteurs de n   
-    """
     count = 2
     r = sqrt(n)
     i = 2
@@ -32,45 +32,30 @@ def nombreFacteur(n):
     return count
 
 
+"""
+    Retourne un boolean (n est premier ou non) 
+"""
 def estPremier(n):
-    """
-        Retourne un boolean (n est premier ou non) 
-    """
     return nombreFacteur(n) == 2
 
-
+"""
+    Retourne le résultat de x^k
+"""
 def puissance(x, k):
-    """
-        Retourne le résultat de x^k
-    """
     return puissanceRapide(x, k)[0]
 
 
-def differenceList(a, b):
-    """
-    Renvoie la différence de 2 listes
-    """
-    R = []
-    for i in a :
-        if i not in b :
-            R.append(i)
-    for i in b :
-        if i not in a :
-            R.append(i)
-    return R
-
-
+"""
+    Retourne la liste des nombres premiers inférieurs à n
+"""
 def listNombrePremierInf(n):
-    """
-        Retourne la liste des nombres premiers inférieurs à n
-    """
     return [i for i in range(1, n) if estPremier(i)]
 
 
+"""
+    Retourne un nombre premier aléatoire entre 500 et 2000
+"""
 def nombrePremier():
-    """
-        Retourne un nombre premier aléatoire entre 500 et 2000
-    """
     trouve = False
 
     while not trouve:

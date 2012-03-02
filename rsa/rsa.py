@@ -7,12 +7,12 @@ from fonctions import *
 
 
 class Rsa :
-
+    
+    """
+        Génère la clé public et la clé privée
+    """
     @staticmethod
     def genereCles(P, Q):
-        """
-            Génère la clé public et la clé privée
-        """
         """ GENERE CLE PUBLIC """
         n = P * Q
         phiden = (P - 1) * (Q - 1)
@@ -46,38 +46,39 @@ class Rsa :
         return ((n, e), (n, f))
 
 
+    """
+        Crypte l avec la clé publique
+    """
     @staticmethod
     def crypter(l, clePub):
-        """
-            Crypte l avec la clé publique
-        """
         (n, c) = clePub
         
         return puissance(l, c) % n
 
 
+    """
+        Crypte le message clair avec la clé publique
+    """
     @staticmethod
     def crypterMessage(msgClair, clePub):
-        """
-            Crypte le message clair avec la clé publique
-        """
         return "-".join([str(Rsa.crypter(ord(l), clePub)) for l in msgClair])
     
 
+    """
+        Décrypte l avec la clé privée
+    """
     @staticmethod
     def decrypter(l, clePrivee):
-        """
-            Décrypte l avec la clé privée
-        """
+        
         (n, d) = clePrivee
         return puissance(l, d) % n
 
 
+    """
+        Décrypte le message chiffré avec la clé privée
+    """
     @staticmethod
     def decrypterMessage(msgChiffre, clePrivee):
-        """
-            Décrypte le message chiffré avec la clé privée
-        """
         return "".join([chr(Rsa.decrypter(int(l), clePrivee)) for l in msgChiffre.split("-")])
     
 
