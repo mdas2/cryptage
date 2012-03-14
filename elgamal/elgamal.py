@@ -3,6 +3,7 @@
 
 from fonctions import *
 
+
 class ElGamal:
 
     """
