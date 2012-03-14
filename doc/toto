@@ -1,0 +1,32 @@
+Le Largonjem 
+
+Historique :
+C'était au 17ème siècle, dans les bagnes, que se sont crées des systèmes de maquillage des mots permettant aux détenus de communiquer sans être compris de leurs geôliers. De tels systèmes ont ainsi été observés dans le monde, au sien des corporations les plus diverses. Tel le tatouage ou l'uniforme, l'argot devient alors un signe de reconnaissance, l'attrait de linsolite, la fierté d'une virtuosité acquise et surtout le plaisir d'exaspérer les non-initiés.
+Certains mots français ont été construits sur ce principe. Ainsi "loufoque" vient de "fou".
+Au bagne de Brest, au début du 19ème siècle, le choix du suffixe "em" donnait du largonjem. Sous le nom de louchébeme (du mot boucher), le largonjem de Brest a longtemps été le jargon des bouchers de la villette.
+
+
+Principe :
+Soit un mot commençant par une consonne :
+- on place la première lettre à la fin du mot
+- on met le caractère "l" en début de mot
+- on place "em" à la fin du mot
+
+Exemple :
+1 - josselin
+2 - losselinjem
+
+Utilisation :
+Exécution du script :
+Mot à crypter : "bateau"
+Mot crypté : "lateaubem"
+
+Programme :
+Le programme contient 2 fonctions :
+La première fonction "wordLargonjem" prend en paramètre un mot.
+On teste d'abord si le premier caractère du mot n'est pas une voyelle. Si c'est bon, on enregistre le nouveau mot sans le premier caractère et on rajoute le premier caractère enlevé et la chaine "em" à la fin du mot.
+La fonction retourne le nouveau mot.
+
+La deuxième fonction "textLargonjem" prend en paramètre une chaîne de caractère.
+Elle découpe cette chaine lorsqu'il y a un espace, à chaque mot découpé on applique la première fonction. 
+La fonction retourne une chaine de caractère avec tous les mots cryptés en largonjem.

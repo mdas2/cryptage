@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.2)  14 MAR 2012 14:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.2)  14 MAR 2012 15:26
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -286,56 +286,4 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \degres on input line 14.
-LaTeX Info: Redefining \dots on input line 14.
-LaTeX Info: Redefining \up on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rapport.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-)
-\tf@toc=\write3
-\openout3 = `rapport.toc'.
-
- [1
-
-] (./rapport.aux) ) 
-Here is how much of TeX's memory you used:
- 1373 strings out of 495061
- 15576 string characters out of 1182622
- 68981 words of memory out of 3000000
- 4576 multiletter control sequences out of 15000+50000
- 12536 words of font info for 31 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 24i,6n,24p,174b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/mdas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200
-.600pk> </home/mdas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </ho
-me/mdas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/mdas/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/mdas/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/mdas/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1728.600pk>
-Output written on rapport.pdf (2 pages, 44976 bytes).
-PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on i

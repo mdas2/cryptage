@@ -42,7 +42,7 @@ class Rsa :
             if (e * f) % phiden == 1:
                 trouve = True   
         
-        """ Retourne un couple (module de chiffrement, clef publique), (module de chiffrement, clef privee) """
+        """ Retourne un couple (module de chiffrement, clé publique), (module de chiffrement, clé privee) """
         return ((n, e), (n, f))
 
 
@@ -80,38 +80,39 @@ class Rsa :
     @staticmethod
     def decrypterMessage(msgChiffre, clePrivee):
         return "".join([chr(Rsa.decrypter(int(l), clePrivee)) for l in msgChiffre.split("-")])
-    
 
-print
-print "====== NOMBRES PREMIERS P ET Q ======="
-p = nombrePremier()
-q = nombrePremier()
-while q == p:
+
+if __name__ == '__main__':
+    print
+    print "====== NOMBRES PREMIERS P ET Q ======="
+    p = nombrePremier()
     q = nombrePremier()
-print "P = ", p
-print "Q = ", q
-print
+    while q == p:
+        q = nombrePremier()
+    print "P = ", p
+    print "Q = ", q
+    print
 
-print "======= GENERATION DES CLEES PUBLIQUE ET PRIVEE ======="
-(clePub, clePrivee) = Rsa.genereCles(p, q)
-print "Clé publique : ", clePub
-print "Clé privée : ", clePrivee
-print
+    print "======= GENERATION DES CLEES PUBLIQUE ET PRIVEE ======="
+    (clePub, clePrivee) = Rsa.genereCles(p, q)
+    print "Clé publique : ", clePub
+    print "Clé privée : ", clePrivee
+    print
 
-print "======= MESSAGE A CRYPTER ======="
-msgClair = "Ecole"
-print "Message à crypter :", msgClair
-print
+    print "======= MESSAGE A CRYPTER ======="
+    msgClair = "Ecole"
+    print "Message à crypter :", msgClair
+    print
 
-print "======= MESSAGE CRYPTE ======="
-msgChiffre = Rsa.crypterMessage(msgClair, clePub)
-print "Message crypté : ", msgChiffre
-print
+    print "======= MESSAGE CRYPTE ======="
+    msgChiffre = Rsa.crypterMessage(msgClair, clePub)
+    print "Message crypté : ", msgChiffre
+    print
 
-print "======= MESSAGE DECRYPTE ======="
-msgDechiffre = Rsa.decrypterMessage(msgChiffre, clePrivee)
-print "Message décrypté :", msgDechiffre
-print
+    print "======= MESSAGE DECRYPTE ======="
+    msgDechiffre = Rsa.decrypterMessage(msgChiffre, clePrivee)
+    print "Message décrypté :", msgDechiffre
+    print
 
-print "======= FIN ======="
-sys.exit(0)
+    print "======= FIN ======="
+    sys.exit(0)
